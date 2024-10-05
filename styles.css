@@ -1,0 +1,270 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #fff;
+    background-color: #f0e68c;
+  }
+  
+  header {
+    background-color: #ff69b4;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ff69b4;
+  }
+  
+  .navbar li {
+    margin: 0 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #ffff00;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: all 0.3s;
+    border-radius: 20px;
+    background-color: #ff1493;
+  }
+  
+  .navbar a:hover {
+    background-color: #ffff00;
+    color: #ff1493;
+  }
+  
+  /* Landing Page Styles */
+  .landing-page {
+    height: 100vh;
+    background-image: url('toontown-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .cartoon-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 105, 180, 0.7);
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+  }
+  
+  .content h1 {
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    color: #ffeb3b;
+    text-shadow: 4px 4px #000;
+  }
+  
+  .content p {
+    font-size: 28px;
+    margin: 10px 0;
+    color: #ffff00;
+    text-shadow: 2px 2px #000;
+  }
+  
+  /* About Section */
+  .about-section {
+    background-color: #32cd32;
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Fun Section Styles */
+.fun-section {
+    background-color: #ffeb3b;
+    text-align: center;
+    padding: 50px 20px;
+    color: #111;
+  }
+  
+  .fun-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff1493;
+  }
+  
+  .fun-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  #fun-button {
+    background-color: #ff69b4;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  #fun-button:hover {
+    background-color: #ff1493;
+  }
+  
+  #quote-box {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ff1493;
+    min-height: 40px; /* Ensures space for quotes even before the first one appears */
+  }
+  
+  /* Animated Shapes */
+  .shapes-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .shape {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: bounce 2s infinite ease-in-out;
+  }
+  
+  .circle {
+    background-color: #32cd32;
+    border-radius: 50%;
+  }
+  
+  .square {
+    background-color: #ff69b4;
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #ff4500;
+  }
+  
+  /* Animation for bouncing shapes */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+/* Contact Section Styles */
+.contact-section {
+    background-color: #f0e68c;
+    padding: 50px 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .contact-section h2 {
+    font-size: 36px;
+    color: #ff1493;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #444;
+  }
+  
+  /* Contact Form Styles */
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    border-color: #ff1493;
+  }
+  
+  .contact-form button {
+    background-color: #ff69b4;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ff1493;
+  }
+  
+  /* Message After Form Submission (can be empty initially) */
+  .form-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #32cd32;
+  }
+    
+  
+  /* Footer */
+  footer {
+    background-color: #ff69b4;
+    padding: 10px;
+    text-align: center;
+    color: #ffff00;
+    font-size: 14px;
+  }
+  
